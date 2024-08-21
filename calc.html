@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>calculator</title>
+<link rel="stylesheet" href="calc.css">
+<script src="calc.js"></script>
+</head>
+<body>
+
+<div align="center">
+
+<h1 align="center">CALCULATOR</h1>
+<table id="val">
+
+<tr>
+<td colspan="3"><input type="text" size="38" name="display" placeholder="0"  id="p">
+</td>
+</tr>
+
+<tr id="a">
+<td><input type="button" value="AC" id="ac" onclick="clearScreen()">
+<input type="button" value="d" id="c" onclick="del()">
+<input type="button" value="%" id="%" onclick="disp('%')">
+<input type="button" value="/" id="/" onclick="disp('/')">
+</td>
+</tr>
+
+<tr id="b">
+<td>
+<input type="button" value="7" id="7" onclick="disp(7)">
+<input type="button" value="8" id="8" onclick="disp(8)">
+<input type="button" value="9" id="9" onclick="disp(9)">
+<input type="button" value="*" id="*" onclick="disp('*')">
+</td>
+</tr>
+
+<tr id="c">
+<td>
+<input type="button" value="4" id="4" onclick="disp(4)">
+<input type="button" value="5" id="5" onclick="disp(5)">
+<input type="button" value="6" id="6" onclick="disp(6)">
+<input type="button" value="-" id="-" onclick="disp('-')">
+</td>
+</tr>
+
+<tr id="d">
+<td>
+<input type="button" value="1" id="1" onclick="disp(1)">
+<input type="button" value="2" id="2" onclick="disp(2)">
+<input type="button" value="3" id="3" onclick="disp(3)">
+<input type="button" value="+" id="+" onclick="disp('+')">
+</td>
+</tr>
+
+<tr id="e">
+<td><input type="button" value="√" id="r" onclick="sqrt()">
+<input type="button" value="0" id="0" onclick="disp(0)">
+<input type="button" value="." id="." onclick="disp('.')">
+<input type="button" value="=" id="=" onclick="calculate()">
+</td>
+</tr>
+
+</table>
+
+</div>
+</body>
+</html>
